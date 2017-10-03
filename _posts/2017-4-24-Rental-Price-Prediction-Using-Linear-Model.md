@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Predicting NYC Rental Prices
+title: Can You Afford to Dwell Well
+subtitle: Analysis and Prediction Rental Prices in the Big Apple
+image: /img/20170411_195356.jpg
+bigimg: /img/20170411_195356.jpg
 ---
-
-![]({{ site.baseurl }}/images/20170411_195356.jpg)
 
 New York city is an extremely tough market when it comes to apartment rentals. As all New Yorkers would say, rents go only in one direction, that is 'up'. Increasing trend of urbanization could be the leading cause of this.
 
 
 As all New Yorkers would attest to apartment hunting could be a grueling stressful process.
-
 
 
 Can one use linear regression to predict NYC rental prices? I was quite surprised how effective a simple linear regression is at predicting rental prices.
