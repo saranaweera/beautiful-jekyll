@@ -1,6 +1,7 @@
 ---
 layout: post
-title: MTA Turnstile Data Analysis
+title: Crowded Subways
+subtitle: An Analysis of MTA Turnstile Data
 image: /img/20170406_082924.jpg
 bigimg: /img/20170406_082924.jpg
 ---
