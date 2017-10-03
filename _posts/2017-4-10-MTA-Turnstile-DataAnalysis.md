@@ -2,7 +2,7 @@
 layout: post
 title: MTA Turnstile Data Analysis
 image: /img/20170406_082924.jpg
-bigimg:/img/20170406_082924.jpg
+bigimg: /img/20170406_082924.jpg
 ---
 
 This is my first blog post. So bear with me if I am breaking any unwritten rules of blogging.
