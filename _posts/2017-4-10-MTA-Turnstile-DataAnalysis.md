@@ -25,7 +25,9 @@ def importMTAData(startMonthInt, endMonthInt):
     df =[]
     for m in range(startMonthInt,endMonthInt):
         for d in range(1,31):
-            url = 'http://web.mta.info/developers/data/nyct/turnstile/turnstile_17' + ('%02d') % (m,) + ('%02d') % (d,) + '.txt'
+            url = 'http://web.mta.info/developers/data/nyct/turnstile/turnstile_17' 
+            url += ('%02d') % (m,) + ('%02d') % (d,) + '.txt'
+            
             print('Trying to Reading :'+ ' '+ url)
             try:
                 tempDF = pd.read_csv(url)
@@ -66,7 +68,8 @@ key = ['C/A',
        'LINENAME']
 
 # create dateTime column in order perform chronological sorting
-df['dateTime'] = pd.to_datetime(df.DATE +' '+ df.TIME, format='%m/%d/%Y %H:%M:%S')
+df['dateTime'] = pd.to_datetime(df.DATE +' '+ df.TIME, 
+                    format='%m/%d/%Y %H:%M:%S')
 
 def calcDiff(df):
     df = df.sort_values('dateTime')
@@ -74,7 +77,9 @@ def calcDiff(df):
     df['Incr_EXITS'] = df.EXITS - df.EXITS.shift(1)
     return(df)
 
-newDF = df.groupby(key, as_index=False).apply(lambda x: calcDiff(x)).reset_index()
+newDF = (df.groupby(key, as_index=False)
+            .apply(lambda x: calcDiff(x)).reset_index()
+        )
 ```
 
 ### Outliers
@@ -91,10 +96,12 @@ We decided to remove all problematic entries from our dataset.
 
 ```python
 # keep only positive entries
-newDF = newDF.loc[(newDF['Incr_ENTRIES']>0) & (newDF['Incr_EXITS']>0),]
+newDF = newDF.loc[(newDF['Incr_ENTRIES']>0) 
+                    & (newDF['Incr_EXITS']>0),]
 
 # Get rid of outrageously large Increments in ENTRIES/EXITS  
-newDF = newDF.loc[(newDF.Incr_ENTRIES < 20000) & (newDF.Incr_EXITS < 20000),]
+newDF = newDF.loc[(newDF.Incr_ENTRIES < 20000) 
+                    & (newDF.Incr_EXITS < 20000),]
 ```
 
 ### Findings
