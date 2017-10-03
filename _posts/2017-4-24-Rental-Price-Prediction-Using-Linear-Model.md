@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Can You Afford to Dwell Well
+title: Can You Afford to Dwell Well?
 subtitle: Analysis and Prediction Rental Prices in the Big Apple
 image: /img/20170411_195356.jpg
 bigimg: /img/20170411_195356.jpg
