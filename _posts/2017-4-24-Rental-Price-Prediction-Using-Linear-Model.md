@@ -29,7 +29,7 @@ It took me a number of attempts of trial and error to figure out various page la
 
 After three days of scraping, I had 30,000 point-in-time rental listings across all 5 boroughs.
 
-In addition, I incorporated zip code level median age and median household income information from the US Census.
+In addition to the data I scraped, I incorporated zip code level median age and median household income information from the US Census.
 
 I also employed NY State Health Department's zip code to neighborhood mappings to identify various neighborhoods (Note: realestate agents might use a different definitions)
 
