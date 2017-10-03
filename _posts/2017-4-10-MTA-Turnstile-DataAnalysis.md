@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MTA Turnstile Data Analysis
-image: /path/to/img
+image: /img/20170406_082924.jpg
 ---
 
 ![Subway turnstiles]({{ site.baseurl }}/img/20170406_082924.jpg)
