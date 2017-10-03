@@ -21,9 +21,13 @@ I was surprised to find out that Brooklyn was home to the most number of apartme
 
 #### Data ####
 
-First steps on analysis is to obtain data to analyze. After 
+The first step in analysis is to obtain data. It seems data for apartment rentals are an elusive subject. I could not find any public data sources containing recent rental information of apartments. 
 
-I used around 30,000 point-in-time rental listings as observations for this analysis.
+Luckily, the internet is full of data. I just needed a way to collect it. Using python libraries: Beautiful Soup and Selenium, I was able to write a pretty robust web scraper to scrape a popular rental listing site for current listings for the 5 boroughs of New York City.
+
+It took me a number of attempts of trial and error to figure out various page layouts of the site and to employ the right amount of delay so that pages are not scraped prior to being fully loaded. Page timeouts were another issue. So, I came up with mechanism to record the scraping status of each listing, so I could rerun the scraper on listings that failed. 
+
+After three days of scraping, I had 30,000 point-in-time rental listings across all 5 boroughs.
 
 In addition, I incorporated zip code level median age and median household income information from the US Census.
 
