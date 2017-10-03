@@ -1,9 +1,10 @@
 ---
 layout: post
-title: MTA Turnstile Exploratory Data Analysis
+title: MTA Turnstile Data Analysis
+image: /img/20170406_082924.jpg
 ---
 
-![Subway turnstiles]({{ site.baseurl }}/images/20170406_082924.jpg)
+![Subway turnstiles]({{ site.baseurl }}/img/20170406_082924.jpg)
 
 This is my first blog post. So bear with me if I am breaking any unwritten rules of blogging.
 
@@ -50,7 +51,7 @@ In order to uniquely identify a turnstile one would have to use all of the follo
 Unique identification of stations require use of a combination of *station* and *line name*.
 
 #### Entries and Exits
-![Subway turnstiles registers]({{ site.baseurl }}/images/20170406_083012.jpg)
+![Subway turnstiles registers]({{ site.baseurl }}/img/20170406_083012.jpg)
 
 
 *Entries* and *exits* columns in the data are the register counts of a given turnstile at the audited time. In order to find the count of riders entering and exiting through a turnstile during each audit interval, one would have to calculate the difference in register counts between the current audit and the previous audit for the turnstile.  
@@ -96,17 +97,17 @@ newDF = newDF.loc[(newDF.Incr_ENTRIES < 20000) & (newDF.Incr_EXITS < 20000),]
 
 ### Findings
 
-![Riders waiting for train]({{ site.baseurl }}/images/20170406_083102.jpg)
+![Riders waiting for train]({{ site.baseurl }}/img/20170406_083102.jpg)
 
 We decided to focus our analysis on riders entering each station as oppose to exiting the station. Our intuition was that riders entering the station would be more likely to talk to someone while waiting for a train to arrive at the station.
 
 ##### Top 10 busiest stations  
 
-![Top 10 Stations]({{ site.baseurl }}/images/AverageEntriesForTop10Stations.png)
+![Top 10 Stations]({{ site.baseurl }}/img/AverageEntriesForTop10Stations.png)
 
 Grand Central Station, Herald Square and Penn Station seem to be top 3 busiest stations.
 
-![10TopStationsOnMap]({{ site.baseurl }}/images/Top10StationsOnMap.png)
+![10TopStationsOnMap]({{ site.baseurl }}/img/Top10StationsOnMap.png)
 
 ##### Busiest Days During Week  
 ![Traffic By Day of Week]({{ site.baseurl }}/images/MeanEntriesbyDay.png)
@@ -114,6 +115,6 @@ Grand Central Station, Herald Square and Penn Station seem to be top 3 busiest s
 Week days are definitely busy in Grand Central, especially Wednesday through Friday.
 
 ##### Busiest Times during the Day
-![Traffic By Time of Day]({{ site.baseurl }}/images/entriesIntoBusiestStations.png)
+![Traffic By Time of Day]({{ site.baseurl }}/img/entriesIntoBusiestStations.png)
 
 Most number of riders enter Grand Central Station and Herald Square during evening rush hour, between 4pm and 8pm.
