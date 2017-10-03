@@ -26,11 +26,11 @@ navbar-links:
   Blog: "https://saranaweera.github.io"
   About Me: "aboutme"
   Projects:
-    - Rent Prediction: "http://deanattali.com/beautiful-jekyll/"
-    - Handwriting Recognition: "http://www.markdowntutorial.com/"
-    - NLP on Whitehouse Briefings: "https://pages.github.com/"
-    - Deep Learning Image Colorization: "https://pages.github.com/"
-    - Subway Traffic Analysis: "https://pages.github.com/"
+    - Rent Prediction: "https://github.com/saranaweera/NYC-Rental-Price-Predictor/"
+    - Handwriting Recognition: "https://github.com/saranaweera/Hand-Written-Digit-Recognition/"
+    - NLP on Whitehouse Briefings: "https://github.com/saranaweera/"
+    - Deep Learning Image Colorization: "https://github.com/saranaweera/"
+    - Subway Traffic Analysis: "https://github.com/saranaweera/MTA-Turnstile-Data-EDA/"
   #Resources:
   #  - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
   #  - Learn markdown: "http://www.markdowntutorial.com/"
