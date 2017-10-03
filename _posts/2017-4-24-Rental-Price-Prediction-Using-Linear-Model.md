@@ -8,14 +8,20 @@ bigimg: /img/20170411_195356.jpg
 
 New York city is an extremely tough market when it comes to apartment rentals. As all New Yorkers would say, rents go only in one direction, that is 'up'. Increasing trend of urbanization could be the leading cause of this.
 
-As all New Yorkers would attest to apartment hunting could be a grueling stressful process. Like with everything in the big city, the apartment market is very competitive. After weeks of searching, when you find the perfect apartment that fits your budget, with not too long of a commute and the right amount of space in the neighborhood that you always wanted to live, you better be ready to jump on it with two months rent in hand. Even then, by the time you get there to see the apartment, it might be gone. Not to mention, rents are increasing twice as fast for renters in the lower income bracket according to a report from [Street Easy](https://ny.curbed.com/2017/8/16/16154956/nyc-rent-prices-wage-increase-comparison) (I know New York City has rent controlled apartments. I'll reserve exploration of how they fit in to the picture for another day).
+As any one who has looked for an apartment in NYC can attest to, apartment hunting could be a grueling stressful process. Like with everything in the big city, the apartment market is very competitive. After weeks of searching, when you find the perfect apartment that fits your budget, with not too long of a commute and the right amount of space in the neighborhood that you always wanted to live, you better be ready to jump on it with two months rent in hand. Even then, by the time inquire about the listing, it might be gone.  
+
+Not to mention, rents are increasing twice as fast for renters in the lower income bracket according to a report from [Street Easy](https://ny.curbed.com/2017/8/16/16154956/nyc-rent-prices-wage-increase-comparison) (I know New York City has rent controlled apartments. I'll reserve exploration of how this fits in to the picture for another day).
 
 As a data scientist, I was curious to find out what drives apartment rents in the Big Apple. Are these factors as intuitive as one would think? Can one build a regression model to predict NYC rental prices?
 
 ### Background ###
+New York City is one of the largest and most expensive apartment rental markets in the United States and in the world. About 70% of the population of the city lives in rental apartments. Which is very different from the rest of the US, where around 65% of the population are home owners. There are more than 55,000 apartment buildings with 6+ units within the city, which leads to around 2.15 million occupied apartments.
 
+I was surprised to find out that Brooklyn was home to the most number of apartments in the city, closely followed by Manhattan, Queens, Bronx and Staten Island.
 
 #### Data ####
+
+First steps on analysis is to obtain data to analyze. After 
 
 I used around 30,000 point-in-time rental listings as observations for this analysis.
 
