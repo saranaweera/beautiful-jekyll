@@ -8,8 +8,5 @@ My name is Shihan Ranaweera. I am a Data Scientist and a former Quantitative Ana
 
 What else do you need?
 
-I am generally an easy going person with an islander mentality. My wife and I are avid travellers, and love exploring and experiencing cultures across the globe.
+I am generally an easy going person with an innate curiousity for new skills and experiences. My wife and I are avid travellers, and love exploring and experiencing different cultures across the globe.
 
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
