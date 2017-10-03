@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MTA Turnstile Exploratory Data Analysis
+title: MTA Turnstile Data Analysis
 image: /path/to/img
 ---
 
