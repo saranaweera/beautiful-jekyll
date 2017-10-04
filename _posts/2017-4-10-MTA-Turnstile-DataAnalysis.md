@@ -10,7 +10,7 @@ This is my first blog post. So bear with me if I am breaking any unwritten rules
 
 Last Friday we completed our first week at Metis and as well as our first project as a group. Project involved analyzing NYC MTA turnstile data to help an imaginary client place teams to canvas subway stations to solicit for email addresses from subway riders, to be used in their mailing group for distribution of invitations for their annual Gala. Goal was to utilize data science techniques to provide the client with insights on which stations are ideal for placement of teams. We utilized exploratory data analysis skills that we learned during our first week in the bootcamp to explore MTA turnstile data and produce some visualizations our findings.
 
-![Subway turnstiles]({{ site.baseurl }}/img/20170406_082924.jpg)
+![Subway turnstiles](/img/20170406_082924.jpg)
 
 #### Reading Data
 NYC MTA Turnstile information is freely available in CSV format through the following website:
