@@ -25,10 +25,16 @@ description: Data Scientist, Quant, Developer and Avid Traveller
 navbar-links:
   Blog: "https://saranaweera.github.io"
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
+  Projects:
+    - Rent Prediction: "https://github.com/saranaweera/NYC-Rental-Price-Predictor/"
+    - Handwriting Recognition: "https://github.com/saranaweera/Hand-Written-Digit-Recognition/"
+    - NLP on Whitehouse Briefings: "https://github.com/saranaweera/"
+    - Deep Learning Image Colorization: "https://github.com/saranaweera/"
+    - Subway Traffic Analysis: "https://github.com/saranaweera/MTA-Turnstile-Data-EDA/"
+  #Resources:
+  #  - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
+  #  - Learn markdown: "http://www.markdowntutorial.com/"
+  #  - GitHub Pages: "https://pages.github.com/"
   #Author's home: "http://deanattali.com"
 
 # Image to show in the navigation bar - image must be a square (width = height)
@@ -58,13 +64,13 @@ avatar: "/img/Shihan.jpg"
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Shihan Ranaweera
-  email: "youremail@domain.com"
+  #email: "youremail@domain.com"
 #  facebook: yourname  # eg. daattali
-  github: yourname    # eg. daattali
+  github: saranaweera    # eg. daattali
 #  twitter: yourname   # eg. daattali
 #  reddit: yourname    # eg. daattali
 #  google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
-#  linkedin: yourname  # eg. daattali
+  linkedin: shihan-r  # eg. daattali
 #  xing: yourname      # eg. daattali
 #  stackoverflow: yourlink  # eg. "3943160/daattali"
 #  snapchat: yourname  # eg. daattali
@@ -85,7 +91,7 @@ footer-links-active:
   google-plus: false
   github: true
   reddit: false
-  linkedin: false
+  linkedin: true
   xing: false
   stackoverflow: false
   snapchat: false
@@ -101,7 +107,7 @@ footer-links-active:
 share-links-active:
   twitter: true
   facebook: true
-  google: false
+  google: true
   linkedin: true
 
 # How to display the link to the website in the footer
