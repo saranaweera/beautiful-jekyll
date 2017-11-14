@@ -68,3 +68,5 @@ Following were attractive neighborhoods:
 
 
 ![Rental Model](/img/RentalModel.png)
+
+Observations deviated from the model when it came to high price luxury rentals. In my mind this makes sense. Luxury rentals have features that are not captured by the top 30 generic features I picked for the model.
