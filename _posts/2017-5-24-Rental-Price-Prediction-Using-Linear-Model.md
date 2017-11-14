@@ -35,6 +35,8 @@ I also employed NY State Health Department's zip code to neighborhood mappings t
 
 #### Model Features ####
 
+Here are the features I ended up using in my model. My initial intuition was to use square footage of apartments as a feature, but it turned out square footage for studio and one bedroom apartments were either missing or inaccurate. Realtors in New York City tend to over exaggerate the size of an apartment both in the description and in the numeric field as there is no regulation to prevent this. Many apartmetns listed as spacious studios in NYC tend to be smaller than 400 sq.ft in my experience :)
+
 * Number of bedrooms
 * Number of bathrooms
 * Commute distance (to a single point in Manhattan)
