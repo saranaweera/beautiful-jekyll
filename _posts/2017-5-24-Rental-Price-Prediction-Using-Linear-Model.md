@@ -67,3 +67,4 @@ Following were attractive neighborhoods:
 * Northwest Brooklyn
 
 
+![Rental Model](/img/RentalModel.png)
