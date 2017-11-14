@@ -56,7 +56,8 @@ Following features contributed to higher prices:
 * Concierge
 * Dishwasher
 * Elevator
-* Door Attendant • Fitness Center
+* Door Attendant 
+* Fitness Center
 
 Following were attractive neighborhoods:
 * Greenwich Village
