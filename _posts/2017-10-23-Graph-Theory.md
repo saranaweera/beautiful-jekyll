@@ -14,9 +14,15 @@ Here the Key of the dictionary will be the current node and the value will be a 
 
 ``` python
 graph_dict = {
-  'A':['B','C']
-  'B':[]
+    'A':['B','C','E'],
+    'B':['C','E','D'],
+    'C':['F','D'],
+    'D':['F', 'E'],
+    'E':['A'],
+    'F':['G'],
+    'G':[]
 }
+
 ```
 
 ## Depth First Search (DFS) ##
@@ -36,6 +42,7 @@ def dfs(node, visited_dict, graph_dict):
             dfs(neighbor, visited_dict, graph_dict)
         else:
             print('skipping', neighbor)
+
 
 ```
 
@@ -57,5 +64,6 @@ def bfs(node, visited_dict, graph_dict):
 
             # insert unvisited neighbors into the queue
             [queue.append(neighbor) for neighbor in graph_dict[current_node] if not neighbor in visited_dict]
+
 
 ```
