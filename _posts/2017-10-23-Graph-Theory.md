@@ -114,7 +114,7 @@ def findShortestPath(starting_node, destination_node, shortestPaths_dict):
 
   ```
 
-**Shortest path dictionary for the graph:**
+**Shortest path dictionary for the graph:** . 
 input:
 ``` python
 
@@ -134,7 +134,7 @@ output:
  }
  ```
 
- **Shortest Path to *G* :**
+ **Shortest Path to *G* :** . 
  input:
  ``` python
  findShortestPath('A',
