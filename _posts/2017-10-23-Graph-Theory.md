@@ -134,7 +134,7 @@ output:
  }
  ```
 
- **Shortest Path to *G* :** . 
+ **Shortest Path to *G* :** .    
  input:
  ``` python
  findShortestPath('A',
