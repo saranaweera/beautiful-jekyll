@@ -3,12 +3,14 @@ layout: post
 title: Connect the Dots
 subtitle: A brief refresher on Graph Theory
 image: https://momath.org/wp-content/uploads/2013/10/graph_theory-692x674.jpeg
-bigimg: https://momath.org/wp-content/uploads/2013/10/graph_theory-692x674.jpeg
+bigimg: /img/20171121_130521.jpg
 ---
 
 I have been prepping for a final round interview at Two Sigma. I am excited and nervous on what to expect, as the day long interview is known to be quite grueling. Since I haven't looked at graph theory in a little while, I decided to go through some material on the subject. I will share some of my code in case anyone finds this helpful.
 
 I wrote this code my self, so if you find any errors please let me know.
+
+![](/img/20171121_130521.jpg)
 
 ## Implement a Graph using a Dictionary
 
