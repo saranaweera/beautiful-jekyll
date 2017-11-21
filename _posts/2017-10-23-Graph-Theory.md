@@ -30,8 +30,7 @@ graph_dict = {
 ## Depth First Search (DFS) ##
 
 ``` python
-visited_dict = {}
-def dfs(node, visited_dict, graph_dict):
+def dfs(node, graph_dict, visited_dict):
 
     # mark current node as visited
     visited_dict[node] = True
@@ -41,19 +40,18 @@ def dfs(node, visited_dict, graph_dict):
     # visit unvisited neighbors
     for neighbor in graph_dict[node]:  
         if not neighbor in visited_dict:
-            dfs(neighbor, visited_dict, graph_dict)
+            dfs(neighbor, graph_dict, visited_dict)
         else:
             print('skipping', neighbor)
-
 
 ```
 
 ## Breadth First Search (BFS) ##
 
 ``` python
-visited_dict = {}
-queue = []
-def bfs(node, visited_dict, graph_dict):
+def bfs(node, graph_dict, visited_dict):
+    queue = []
+
     # insert the starting node into the queue
     queue.append(node)
 
@@ -68,4 +66,84 @@ def bfs(node, visited_dict, graph_dict):
             [queue.append(neighbor) for neighbor in graph_dict[current_node] if not neighbor in visited_dict]
 
 
+```
+
+## Find Shortest Path using Bread First Search ##
+
+``` python
+# generates dictionary of previous nodes for each node
+def bfs_shortestPaths(node, graph_dict, visited_dict):
+    queue = []
+
+    # insert the starting node into the queue
+    queue.append(node)
+
+    shortest_path = {}
+
+    while queue:
+        current_node = queue.pop(0)
+        if not current_node in visited_dict:
+            visited_dict[current_node] = True
+
+            print('visiting', current_node)
+
+            # insert unvisited neighbors into the queue
+            for neighbor in graph_dict[current_node]:
+                if not neighbor in visited_dict:
+                    queue.append(neighbor)
+                    if not neighbor in shortest_path:
+                        shortest_path[neighbor] = current_node
+                    else:
+                        print(neighbor, 'already in shortest path')
+
+    return shortest_path
+
+# traverses the shortest path dictionary and creates a stack of nodes
+def findShortestPath(starting_node, destination_node, shortestPaths_dict):
+      path = []
+
+      previous_node = shortestPaths_dict[destination_node]
+      path.insert(0,destination_node)
+      while previous_node:
+          path.insert(0,previous_node)
+          if previous_node == starting_node:
+              break
+          previous_node = shortestPaths_dict[previous_node]
+
+      return path
+
+  ```
+
+**Shortest path dictionary for the graph:**
+input:
+``` python
+
+queue = []
+path = {}
+bfs_shortestPaths('A',{},graph_dict)
+```
+output:
+``` python
+{
+ 'B': 'A',
+ 'C': 'A',
+ 'D': 'B',
+ 'E': 'A',
+ 'F': 'C',
+ 'G': 'E'
+ }
+ ```
+
+ **Shortest Path to *G* :**
+ input:
+ ``` python
+ findShortestPath('A',
+                 'G',
+                 bfs_shortestPaths('A',graph_dict, {})
+                )
+```
+
+output:
+``` python
+['A', 'E', 'G']
 ```
