@@ -71,6 +71,7 @@ def bfs(node, graph_dict, visited_dict):
 ```
 
 ## Find Shortest Path using Bread First Search ##
+**Note: Assuming links connecting nodes are of same length**
 
 ``` python
 # generates dictionary of previous nodes for each node
@@ -117,7 +118,7 @@ def findShortestPath(starting_node, destination_node, shortestPaths_dict):
   ```
 
 **Shortest path dictionary for the graph:**
-    
+
 input:
 ``` python
 
@@ -138,7 +139,7 @@ output:
  ```
 
  **Shortest Path to *G* :**
-     
+
  input:
  ``` python
  findShortestPath('A',
